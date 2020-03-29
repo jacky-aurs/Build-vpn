@@ -18,8 +18,7 @@
 #### 如果想配置多用户需要编辑 shadowsocks.json 文件
 #### 查看配置文件 cat /etc/shadowsocks.json 进行修改 vi /etc/shadowsocks.json 文件
 #### 删除原有的shadowsocks.json文件,添加一下文件
-`
-(```)
+#### (```)
 {
     "server":"这里写本机公网IP",
     "local_address":"127.0.0.1",
@@ -45,7 +44,7 @@
     "method": "chacha20-ietf"
 }
 (```)
-`
+
 #### 安装shadowsocks依赖关系 yum -y install libsodium
 #### 重启shadowsocks使配置生效：/etc/init.d/shadowsocks restart
 #### 防火墙开放相关端口：iptables -I INPUT -p tcp --dport 9001:9014 -j ACCEPT 如果是单用户的话 端口号设置安装配置时的端口
