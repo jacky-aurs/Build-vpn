@@ -53,7 +53,6 @@
 #### 如果以上没有问题,ssserver应该可以用了，请在客户端(比如Windows系统客户端)配置目标服务器IP、端口、密码、加密的方式，必须与服务器的配置一致。如下
 #### ![avatar](http://baidu.com/pic/doge.png)
 #### ![avatar](http://baidu.com/pic/doge.png)
-u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 #### shadowsocks服务管理
 #### 卸载shadowsocks
 
