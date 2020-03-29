@@ -14,7 +14,8 @@
 #### 安装额外epel仓库 `rpm -ivh https://mirrors.aliyun.com/epel/epel-release-latest-6.noarch.rpm` 或者 `yum -y install epel-release`
 #### 安装shadowsocks这里推荐一键安装进行配置:`wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh`  `chmod +x shadowsocks.sh`  `./shadowsocks.sh 2>&1 | tee shadowsocks.log` 提示设置密码、TCP连接端口号、加密方式进行配置即可 
 #### 单用户环境已经安装成功显示如下
-#### ![图片alt](图片地址 ''图片title'')
+#### ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 #### 如果想配置多用户需要编辑 shadowsocks.json 文件
 #### 查看配置文件 `cat /etc/shadowsocks.json` 进行修改 `vi /etc/shadowsocks.json` 文件
 #### 删除原有的shadowsocks.json文件,添加一下文件
@@ -51,8 +52,10 @@
 #### 保存防火墙配置并重载配置：`/etc/init.d/iptables save && service iptables reload`
 #### 启动shadowsocks  `/etc/init.d/shadowsocks start`
 #### 如果以上没有问题,ssserver应该可以用了，请在客户端(比如Windows系统客户端)配置目标服务器IP、端口、密码、加密的方式，必须与服务器的配置一致。如下
-#### ![图片alt](图片地址 ''图片title'') 
-#### ![图片alt](图片地址 ''图片title'')
+#### ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+#### ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
 #### shadowsocks服务管理
 #### 卸载shadowsocks
 
