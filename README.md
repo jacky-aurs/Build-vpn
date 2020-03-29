@@ -1,7 +1,7 @@
 # Build-vpn
 # 快速搭建ssr服务端
 #### 昨天同时问我有没有好的vpn可以推荐,就推荐了ssr,然后差了资料看下ssr服务端如何搭建,正好手上还有一台center os系统的服务器没到期.搭建vpn使用现有的搬瓦工的服务器进行搭建.服务器系统center os系统
-## 第一步下载bbr
+
 #### 用于TCP加速,不是必需,但强烈建议安装，4.9以上的内核版本才能支持bbr，CentOS 6默认为2.6内核，显然不能支持bbr，需要更新内核。
 #### 如果已经安装过bbr检查是否是最新的 yum update -y 没有安装使用 yum -y install wget && wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh 进行安装
 #### 安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
