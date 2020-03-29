@@ -1,6 +1,6 @@
 # Build-vpn
 # 快速搭建ssr服务端
-#### 昨天同时问我有没有好的vpn可以推荐,就推荐了ssr,然后差了资料看下ssr服务端如何搭建,正好手上还有一台center os系统的服务器没到期.搭建vpn使用现有的搬瓦工的服务器进行搭建.服务器系统center os系统
+#### 昨天同事问我有没有好的vpn可以推荐,就推荐了ssr,然后查了资料看下ssr服务端如何搭建,正好手上还有一台center os系统的服务器没到期.搭建vpn使用现有的搬瓦工的服务器进行搭建.服务器系统center os系统
 
 #### 用于TCP加速,不是必需,但强烈建议安装，4.9以上的内核版本才能支持bbr，CentOS 6默认为2.6内核，显然不能支持bbr，需要更新内核。
 #### 如果已经安装过bbr检查是否是最新的 yum update -y 没有安装使用 yum -y install wget && wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh 进行安装
@@ -18,7 +18,7 @@
 #### 如果想配置多用户需要编辑 shadowsocks.json 文件
 #### 查看配置文件 cat /etc/shadowsocks.json 进行修改 vi /etc/shadowsocks.json 文件
 #### 删除原有的shadowsocks.json文件,添加一下文件
-{
+(```){
     "server":"这里写本机公网IP",
     "local_address":"127.0.0.1",
     "local_port":1080,
@@ -41,7 +41,7 @@
     },
     "timeout": 300,
     "method": "chacha20-ietf"
-}
+}(```)
 #### 安装shadowsocks依赖关系 yum -y install libsodium
 #### 重启shadowsocks使配置生效：/etc/init.d/shadowsocks restart
 #### 防火墙开放相关端口：iptables -I INPUT -p tcp --dport 9001:9014 -j ACCEPT 如果是单用户的话 端口号设置安装配置时的端口
